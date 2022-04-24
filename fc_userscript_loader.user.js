@@ -3,14 +3,14 @@
 // @version        github-latest
 // @description    Userscript to load Frozen Cookies
 // @author         Icehawk78
-// @homepage       https://github.com/icehawk78/FrozenCookies
+// @homepage       https://github.com/heshammourad/FrozenCookies
 // @include        http://orteil.dashnet.org/cookieclicker/
 // @include        https://orteil.dashnet.org/cookieclicker/
 // @updateURL      https://heshammourad.github.io/FrozenCookies/fc_userscript_loader.user.js
 // @downloadURL    https://heshammourad.github.io/FrozenCookies/fc_userscript_loader.user.js
 // ==/UserScript==
 
-// Source:    https://github.com/Icehawk78/FrozenCookies/main/
+// Source:    https://github.com/heshammourad/FrozenCookies/main/
 // Github.io: http://heshammourad.github.io/FrozenCookies/
 
 var loadInterval = setInterval(function () {
