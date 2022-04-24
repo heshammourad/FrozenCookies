@@ -1767,6 +1767,12 @@ function buildingStats(recalculate) {
       ) {
         buildingBlacklist.push(2);
       }
+      if (Game.Objects["Mine"].amount >= 500) {
+        buildingBlacklist.push(3);
+      }
+      if (Game.Objects["Factory"].amount >= 500) {
+        buildingsBlacklist.push(4);
+      }
       FrozenCookies.caches.buildings = Game.ObjectsById.map(function (
         current,
         index
