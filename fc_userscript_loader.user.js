@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name           Frozen Cookies
+// @name           heshammourad's Frozen Cookies
 // @version        github-latest
 // @description    Userscript to load Frozen Cookies
 // @author         Icehawk78
