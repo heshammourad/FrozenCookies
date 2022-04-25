@@ -1761,17 +1761,16 @@ function buildingStats(recalculate) {
         buildingBlacklist.push(0);
       }
       //Stop buying Farms if at set limit
-      if (
-        FrozenCookies.farmLimit &&
-        Game.Objects["Farm"].amount >= FrozenCookies.farmMax
-      ) {
-        buildingBlacklist.push(2);
-      }
-      if (Game.Objects["Mine"].amount >= 500) {
-        buildingBlacklist.push(3);
-      }
-      if (Game.Objects["Factory"].amount >= 500) {
-        buildingBlacklist.push(4);
+      if (FrozenCookies.farmLimit) {
+        if (Game.Objects["Farm"].amount >= FrozenCookies.farmMax) {
+          buildingBlacklist.push(2);
+        }
+        if (Game.Objects["Mine"].amount >= FrozenCookies.farmMax) {
+          buildingBlacklist.push(3);
+        }
+        if (Game.Objects["Factory"].amount >= FrozenCookies.farmMax) {
+          buildingBlacklist.push(4);
+        }
       }
       FrozenCookies.caches.buildings = Game.ObjectsById.map(function (
         current,
